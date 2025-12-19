@@ -4,7 +4,7 @@ import pickle
 from tensorflow.keras.models import load_model
 
 # Load trained model and scaler
-model = load_model("ann_model.pkl")
+model = load_model("model.h5")
 scaler = pickle.load(open("ann_model.pkl", "rb"))
 
 st.set_page_config(page_title="Bank Term Deposit Prediction", layout="centered")
